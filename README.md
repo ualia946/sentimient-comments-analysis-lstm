@@ -46,7 +46,3 @@ Before training:
 pip install -r requirements.txt
 python app.py
 
-## 📂 Project Structure
-
-Below is the folder structure of the project:
-sentiment-analysis-lstm/ ├── app.py # Flask web server ├── modelo/ │ └── predictor.py # Loads model and makes predictions ├── model.ipynb # Notebook with model training ├── modelChatBot.h5 # Trained model ├── modeltokenizer.pickle # Tokenizer for text preprocessing ├── static/ # CSS or images if needed ├── templates/ │ └── index.html # Web frontend ├── data/ # CSV files with comments │ └── Comentarios1.csv │ └── Comentarios2.csv ├── requirements.txt # All dependencies └── .gitignore # Ignore unnecessary files
