@@ -1,0 +1,6 @@
+# Exclude virtual environments
+venv/
+
+# Exclude large TensorFlow files
+*.pyd
+*.dll
