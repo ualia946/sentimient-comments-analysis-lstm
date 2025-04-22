@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Analizador de Sentimientos</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <h1>Resoludor de comentarios de comentarios</h1>
+  
+  <form action="/analizar" method="POST">
+    <label for="comentario">Escribe tu comentario:</label><br>
+    <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Analizar">
+  </form>
+
+  {% if resultado %}
+    <p>Comentario: {{ comentario }}</p>
+    <p>Sentimiento detectado: <strong>{{ resultado }}</strong></p>
+  {% endif %}
+
+</body>
+</html>
